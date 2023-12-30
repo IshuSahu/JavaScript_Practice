@@ -1,0 +1,7 @@
+Primitive datatypes: this basically give u the the copy of value(call by value)
+    7  types: String, number, boolean, null, undefine, symbol, Bigint
+
+
+referance(Non-Primitive): generally provide u the referance of given datatypes(call by referance)
+    Array, Objects, Functions
+    
