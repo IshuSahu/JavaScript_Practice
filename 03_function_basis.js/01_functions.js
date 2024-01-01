@@ -35,18 +35,24 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage("Ishu"))
+// console.log(loginUserMessage("Ishu"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+// function calculateCartPrice(...num1){ // ==>Rest operator/ spread operator
+//     return num1
+// }
+
+function calculateCartPrice(val1, val2, ...num1){ // num1=[500, 2000], val1 = 200, val2=400
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000))
 
+
+//object passing as parameter
 const user = {
-    username: "hitesh",
+    username: "Ishu",
     prices: 199
 }
 
@@ -60,6 +66,7 @@ handleObject({
     price: 399
 })
 
+// array passing as parameter
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
