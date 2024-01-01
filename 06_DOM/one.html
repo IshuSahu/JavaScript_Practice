@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning  
+            <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+
+document.getElementById("title").id
+    'title'
+document.getElementById("title").className
+    'heading'
+document.getElementById("title").class
+    undefined
+document.getElementById("title").getAttribute
+    ƒ getAttribute() { [native code] }
+document.getElementById("title").getAttribute('id')
+       title'
+document.getElementById("title").getAttribute('class')
+    'heading'
+document.getElementById("title").setAttribute('class', 'test')
+
+
+document.getElementById("title")
+                <h1 id=​"title" class=​"heading">​…​</h1>​
+title.style.backgroundColor = "yellow"
+                            'yellow'
+
+title.style.padding= "15em"
+
+title.style.padding= "15px"
+
+title.style.borderRadius= "15px"
+
+title.style.margin= "15px"
+
+
+
+
+title.innerHTML
+'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+title.textContent
+'DOM learning on Chai aur code test text'
+title.innerText
+'DOM learning on Chai aur code'
+
+
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('#id')
+null
+document.querySelector("#title")
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('input[type="password"]')
+<input type=​"password" name id>​
+document.querySelectorAll('h1')
+
+
+
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li').style.backgroundColor="yellow"
+'yellow'
+const myul = document.querySelectorAll('h1')
+undefined
+myul
+NodeList [h1#title.heading]
+myul.style.backgroundColor='green'
+VM1790:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor')
+    at <anonymous>:1:27
+(anonymous) @ VM1790:1
+myul[0].style.backgroundColor='green'
+'green'
+
+
+
+const myli = document.querySelectorAll('li')
+undefined
+myli
+NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myli.forEach(function (l) {
+    l.style.backgroundcolor = 'green'
+})
+undefined
+myli.forEach(function (l) {
+    l.style.backgroundColor = 'green'
+})
+
+
+
+const mylist = document.querySelectorAll('list-item')
+undefined
+mylist
+NodeList []length: 0[[Prototype]]: NodeList
+Array.from(mylist)
+[]length: 0[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+const myarray = Array.from(mylist)
+undefined
+myarray.forEach(function (li) {
+      li.style.color='orange'      
+})
+undefined
+myarray.forEach(function (li) {
+  li.style.color = 'orange';
+});
+
+
+ -->

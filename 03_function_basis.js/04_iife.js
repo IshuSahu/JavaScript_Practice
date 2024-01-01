@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expressions (IIFE)
 /*
  some time our code get polluted or violet by the global parameter to remove that pollution we use IIFE
- it run imediate after function defination
+ it run immediate after function defination
 */
 
 // named iffe
