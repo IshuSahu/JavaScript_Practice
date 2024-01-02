@@ -17,6 +17,8 @@ const values = coding.forEach( (item) => {  // does not return any values(undefi
 //     return num > 4
 // } )
 
+/*The filter() method is an iterative method. It calls a provided callbackFn function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a truthy value */
+
 // *************** another method*************
 // const newNums = []
 
@@ -63,16 +65,16 @@ const newNums = myNumers
 
 // console.log(newNums);
 
-//*******************************Reduce */
+//*******************************Reduce **************************************8*/
 
 const myNums = [1, 2, 3]
+// (accumulator, currvalue)
+const myTotal = myNums.reduce(function (acc, currval) {
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc + currval
+}, 0)
 
-// const myTotal = myNums.reduce(function (acc, currval) {
-//     console.log(`acc: ${acc} and currval: ${currval}`);
-//     return acc + currval
-// }, 0)
-
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+// const myTotal = myNums.reduce( (acc, curr) => acc*curr, 1)
 
 console.log(myTotal);
 
@@ -98,4 +100,4 @@ const shoppingCart = [
  
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
-console.log(priceToPay);
+// console.log(priceToPay);

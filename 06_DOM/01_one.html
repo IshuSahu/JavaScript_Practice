@@ -49,9 +49,9 @@ document.getElementById("title").setAttribute('class', 'test')
 
 
 document.getElementById("title")
-                <h1 id=​"title" class=​"heading">​…​</h1>​
+    <h1 id=​"title" class=​"heading">​…​</h1>​
 title.style.backgroundColor = "yellow"
-                            'yellow'
+    'yellow'
 
 title.style.padding= "15em"
 
@@ -65,53 +65,49 @@ title.style.margin= "15px"
 
 
 title.innerHTML
-'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+    'DOM learning on Chai aur code <span style="display: none;">test text</span>' 
 title.textContent
-'DOM learning on Chai aur code test text'
+    'DOM learning on Chai aur code test text'
 title.innerText
-'DOM learning on Chai aur code'
+    'DOM learning on Chai aur code'
 
 
 document.querySelector('h1')
-<h1 id=​"title" class=​"heading">​…​</h1>​
+    <h1 id=​"title" class=​"heading">​…​</h1>​
 document.querySelector('#id')
-null
+    null
 document.querySelector("#title")
-<h1 id=​"title" class=​"heading">​…​</h1>​
+    <h1 id=​"title" class=​"heading">​…​</h1>​
 document.querySelector('input[type="password"]')
-<input type=​"password" name id>​
+    <input type=​"password" name id>​
 document.querySelectorAll('h1')
 
 
 
 
 document.querySelector('ul')
-<ul>​…​</ul>​
+    <ul>​…​</ul>​
 const myul = document.querySelector('ul')
-undefined
+    undefined
 myul.querySelector('li').style.backgroundColor="yellow"
-'yellow'
+    'yellow'
 const myul = document.querySelectorAll('h1')
-undefined
+    undefined
 myul
-NodeList [h1#title.heading]
+    NodeList [h1#title.heading]
 myul.style.backgroundColor='green'
-VM1790:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor')
-    at <anonymous>:1:27
-(anonymous) @ VM1790:1
+        VM1790:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundColor') at <anonymous>:1:27
+
 myul[0].style.backgroundColor='green'
-'green'
+    'green'
 
 
 
 const myli = document.querySelectorAll('li')
-undefined
+    undefined
 myli
-NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
-myli.forEach(function (l) {
-    l.style.backgroundcolor = 'green'
-})
-undefined
+    NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
 myli.forEach(function (l) {
     l.style.backgroundColor = 'green'
 })
@@ -119,9 +115,9 @@ myli.forEach(function (l) {
 
 
 const mylist = document.querySelectorAll('list-item')
-undefined
+    undefined
 mylist
-NodeList []length: 0[[Prototype]]: NodeList
+    NodeList []length: 0[[Prototype]]: NodeList
 Array.from(mylist)
 []length: 0[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
 const myarray = Array.from(mylist)

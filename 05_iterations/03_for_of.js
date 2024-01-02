@@ -3,7 +3,7 @@
 // ["", "", ""]
 // [{}, {}, {}]
 
-const arr = [1, 2, 3, 4, 5]
+const arr = [1, 2, 3, 4, 5] 
 
 for (const num of arr) {
     //console.log(num);
@@ -25,11 +25,11 @@ map.set('IND', "India") // store unique value
 
 // console.log(map);
 
-for (const [value] of map) { 
+for (const [value] of map) {   //the [value] part is using destructuring assignment 
     console.log(value);
 }
-for (const [key, value] of map) { 
-    console.log(key, ':-', value);
+for (const [key, value] of map) {    
+    // console.log(key, ':-', value);
 }
 
 const myObject = {
