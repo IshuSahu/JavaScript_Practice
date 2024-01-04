@@ -6,7 +6,7 @@ const values = coding.forEach( (item) => {  // does not return any values(undefi
     return item
 } )
 
-// console.log(values); 
+console.log(values); 
 
 // for this we will use filter for return each value
 // const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -43,11 +43,11 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
-  let userBooks = books.filter( (bk) => bk.genre === 'History')
+let userBooks = books.filter( (bk) => bk.genre === 'History')
 
-  userBooks = books.filter( (bk) => { 
-    return bk.publish >= 1995 && bk.genre === "History"
-})
+// userBooks = books.filter( (bk) => { 
+//     return bk.publish >= 1995 && bk.genre === "History"
+// })
 //   console.log(userBooks);
 
 
@@ -70,7 +70,7 @@ const newNums = myNumers
 const myNums = [1, 2, 3]
 // (accumulator, currvalue)
 const myTotal = myNums.reduce(function (acc, currval) {
-    console.log(`acc: ${acc} and currval: ${currval}`);
+    // console.log(`acc: ${acc} and currval: ${currval}`);
     return acc + currval
 }, 0)
 

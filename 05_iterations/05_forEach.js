@@ -1,6 +1,6 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-coding.forEach( function (val){
+coding.forEach( function (val){  // take a call back function
     // console.log(val);
 } )
 
