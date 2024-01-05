@@ -23,10 +23,10 @@ if (true) {
 
 
 // function one(){
-//     const username = "hitesh"
+//     const username = "Ishu"
 
 //     function two(){
-//         const website = "youtube"
+//         const website = "Portfolio"
 //         console.log(username);
 //     }
 //     // console.log(website);
@@ -38,9 +38,9 @@ if (true) {
 // // one()
 
 // if (true) {
-//     const username = "hitesh"
-//     if (username === "hitesh") {
-//         const website = " youtube"
+//     const username = "Ishu"
+//     if (username === "Ishu") {
+//         const website = " Profolio"
 //         // console.log(username + website);
 //     }
 //     // console.log(website);
@@ -60,7 +60,7 @@ if (true) {
 
 
 
-// addTwo(5)
-// const addTwo = function(num){ // function /Expression
-//     return num + 2
-// }
+console.log(addTwo(5));
+const addTwo = function(num){ // function /Expression
+    return num + 2
+}

@@ -1,5 +1,5 @@
 const user = {
-    username: "hitesh",
+    username: "Ishu",
     price: 999,
 
     welcomeMessage: function() {
@@ -17,14 +17,14 @@ const user = {
 
 //  this inside function 
 // function chai(){
-//     let username = "hitesh"
+//     let username = "Ishu"
 //     console.log(this.username);  // return undefined in function
 // }
 
 // chai()
 
 // const chai = function () {
-//     let username = "hitesh"
+//     let username = "Ishu"
 //     console.log(this.username);
 // }
 
@@ -49,7 +49,7 @@ const chai =  () => {
 const addTwo = (num1, num2) => ({username: "Ishu sahu"}) // object has to be warp in parenthesis
 
 
-console.log(addTwo(3, 4))
+// console.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]

@@ -38,3 +38,13 @@ myCoding.forEach( (item) => {
     
     console.log(item.languageName);
 } )
+
+const map = new Map() 
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('Fr', "France")
+map.set('IN', "India")
+
+map.forEach((Item)=>{ // return value
+    console.log(Item)
+})

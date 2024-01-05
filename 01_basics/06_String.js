@@ -7,7 +7,7 @@ const repoCount = 50
 
 // console.log(name + repoCount + " Value");
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);  //  Mostly in use now
+// console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);  //  Mostly in use now
 
 const gameName = new String('ishu-janakram-sahu-com')
 
@@ -23,21 +23,21 @@ const gameName = new String('ishu-janakram-sahu-com')
 const newString = gameName.substring(0, 4)
 // console.log(newString);
 
-// const anotherString = gameName.slice(-8, 4)
+const anotherString = gameName.slice(-8, 4)
 // console.log(anotherString);
 
-// const newStringOne = "   ishu    "
+const newStringOne = "   ishu    "
 // console.log(newStringOne);
 // console.log(newStringOne.trim());
 
 const url = "https://ishu.com/ishu%20sahu"
 
-console.log(url.replace('%20', '-'))
+// console.log(url.replace('%20', '-'))
 
-console.log(url.includes('sundar'))
+// console.log(url.includes('sundar'))
 
-console.log(gameName.split('-'));
-console.log(gameName.lastIndexOf());
+// console.log(gameName.split('-'));
+// console.log(gameName.lastIndexOf());
 
 let value = 12;
 

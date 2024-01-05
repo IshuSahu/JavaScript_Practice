@@ -25,11 +25,11 @@ map.set('IND', "India") // store unique value
 
 // console.log(map);
 
-for (const [value] of map) {   //the [value] part is using destructuring assignment 
+for (const [value] of map) {   //the [value] part is using destructuring assignment  single will return only key
     console.log(value);
 }
 for (const [key, value] of map) {    
-    // console.log(key, ':-', value);
+    console.log(key, ':-', value);
 }
 
 const myObject = {
@@ -37,7 +37,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-for (const [key, value] of myObject) { // it is not itratable their is diffrent way(For in loop)
-    console.log(key, ':-', value);
+// for (const [key, value] of myObject) { // it is not itratable their is diffrent way(For in loop)
+//     // console.log(key, ':-', value);
     
-}
+// }

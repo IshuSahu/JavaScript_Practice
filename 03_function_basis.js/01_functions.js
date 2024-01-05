@@ -47,7 +47,7 @@ function calculateCartPrice(val1, val2, ...num1){ // num1=[500, 2000], val1 = 20
     return num1
 }
 
-console.log(calculateCartPrice(200, 400, 500, 2000))
+// console.log(calculateCartPrice(200, 400, 500, 2000))
 
 
 //object passing as parameter
@@ -73,5 +73,5 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 
-// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
