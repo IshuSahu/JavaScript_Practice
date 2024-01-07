@@ -1,0 +1,13 @@
+version =  node -v 
+
+npm init 
+
+install node mon:
+    npm i --save-dev  nodemon
+
+nodemon -> 
+
+npm i dotenv->
+
+Progress bar -> npm i progress
+

@@ -1,0 +1,1 @@
+Hii, My name is Ishu and I'm learning Node.js/n this is file writing approch using Promises
