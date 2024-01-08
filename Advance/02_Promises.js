@@ -41,7 +41,7 @@ const promiseFour = new Promise(function(resolve, reject){
         }
     }, 1000)
 })
-
+// Promise chaining
  promiseFour
  .then((user) => {
     console.log(user);

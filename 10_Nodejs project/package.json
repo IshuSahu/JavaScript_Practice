@@ -1,0 +1,18 @@
+{
+  "name": "node-crud-api-project",
+  "version": "1.0.0",
+  "description": "this is vallila node js api project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Ishu sahu",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

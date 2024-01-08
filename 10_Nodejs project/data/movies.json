@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "title": "The Adventure Begins",
+    "year": 2010,
+    "genre": "Action",
+    "rating": 8.2
+  },
+  {
+    "id": "2",
+    "title": "Mystery of the Shadows",
+    "year": 2015,
+    "genre": "Mystery",
+    "rating": 7.5
+  },
+  {
+    "id": "3",
+    "title": "Love in the Rain",
+    "year": 2018,
+    "genre": "Romance",
+    "rating": 6.9
+  },
+  {
+    "id": "4",
+    "title": "Sci-Fi Odyssey",
+    "year": 2022,
+    "genre": "Science Fiction",
+    "rating": 9
+  },
+  {
+    "id": "5",
+    "title": "Comedy Central",
+    "year": 2013,
+    "genre": "Comedy",
+    "rating": 7.8
+  },
+  {
+    "title": "Dunki",
+    "year": 2023,
+    "genre": "Patriotic",
+    "rating": 7.2,
+    "id": "2281cbe0-d62b-4de3-9572-91ad5d9df0ca"
+  },
+  {
+    "title": "ANimal",
+    "year": 2023,
+    "genre": "Action",
+    "rating": 9.2,
+    "id": "ed32e1f8-f81f-4490-883b-e6928031bb18"
+  }
+]
