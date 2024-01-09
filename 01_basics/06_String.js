@@ -41,4 +41,4 @@ const url = "https://ishu.com/ishu%20sahu"
 
 let value = 12;
 
-console.log(typeof(value.toString()))
+// console.log(typeof(value.toString()))

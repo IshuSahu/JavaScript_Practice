@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = (data) => {
     try {
-        fs.appendFileSync(path.join(__dirname, "..", "data", "movies.json"), JSON.stringify(data) + '\n', "utf-8");
+        fs.appendFileSync(path.join(__dirname, "..", "data", "movies.json"), JSON.stringify(data), "utf-8");
         // Note: I added '\n' to separate each appended JSON object with a new line
     } catch (err) {
         console.error(err);

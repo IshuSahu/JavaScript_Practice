@@ -8,7 +8,6 @@
     undefine => value not assign
     Symbol => uniqueness
 
-
     Object
 */
 let a=787;

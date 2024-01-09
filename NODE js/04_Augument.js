@@ -7,5 +7,5 @@
 //  node .\04_Augument.js Name=Ishu
 
 const minimist = require("minimist")
-const argNew = minimist(process.argv.slice(2)[0]);
+const argNew = minimist(process.argv.slice(2));
 console.log(argNew.Name);
