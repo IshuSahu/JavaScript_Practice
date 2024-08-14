@@ -25,7 +25,7 @@ console.log(id === anotherId);
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-    name: "hitesh",
+    name: "Ishu",
     age: 22,
 }
 
@@ -59,5 +59,5 @@ let myDetail = myProfile
 
 myDetail.email="ishusahu@gmail.com"
 
-// console.log(myProfile)
-// console.log(myDetail)
+console.log(myProfile)
+console.log(myDetail)

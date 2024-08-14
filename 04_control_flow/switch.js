@@ -12,21 +12,21 @@ const month = "march"
 switch (month) {
     case "jan":
         console.log("January");
-        break;
+        // break;
     case "feb":
         console.log("feb");
-        break;
+        // break;
     case "march":
         console.log("march");
-        break;
+        // break;
     case "april":
         console.log("april");
-        break;
+        // break;
 
     default:
         console.log("default case match");
-        break;
+        // break;
 }
 
 
-/* if we diddt use break it will run all cases except===>default case */
+/* if we diddt use break it will run all successive cased including default*/

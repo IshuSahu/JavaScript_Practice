@@ -51,7 +51,7 @@ const users = [
 
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
 //some time we need to check the keys property exits or not
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));

@@ -25,3 +25,4 @@ const id = Symbol('123')
 const accountId = Symbol('123')
 console.log(id==accountId); // false
 
+

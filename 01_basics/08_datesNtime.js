@@ -25,7 +25,8 @@ let newDate = new Date()
 
 // console.log(`${newDate.getDay()} and the time ${newDate.getTime()}`);
 
-// newDate.toLocaleString('default', {
-//     weekday: "long", // we can also change the type
+newDate.toLocaleString('default', {
+    weekday: "long", // we can also change the type
     
-// })
+})
+

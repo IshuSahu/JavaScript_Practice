@@ -7,12 +7,12 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Ishu",
+    "full name": "Ishu Janakram sahu",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "Nagpur",
+    email: "ishu@gmail.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
@@ -22,17 +22,19 @@ const JsUser = {
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
-JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+JsUser.email = "ishu@chatgpt.com"
+// Object.freeze(JsUser) // now the object cannot be change
+// JsUser.email = "ishu@microsoft.com"
+// console.log(JsUser.email);
 
-JsUser.greeting = function(){
+JsUser.greeting = function() {
     console.log("Hello JS user");
 }
-JsUser.greetingTwo = function(){
+
+JsUser.greetingTwo = function() {
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+// Execute the methods and log their outputs
+JsUser.greeting(); // This will print: Hello JS user
+JsUser.greetingTwo();

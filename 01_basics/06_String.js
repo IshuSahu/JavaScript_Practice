@@ -11,34 +11,34 @@ const repoCount = 50
 
 const gameName = new String('ishu-janakram-sahu-com')
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+console.log(gameName[0]);
+console.log(gameName.__proto__);
 
-
-// console.log(gameName.length);
-// console.log(gameName.toUpperCase());
-// console.log(gameName.charAt(2));
-// console.log(gameName.indexOf('k'));
+console.log(gameName.length);
+console.log(gameName.toUpperCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('k'));
 
 const newString = gameName.substring(0, 4)
-// console.log(newString);
+console.log("1 " + newString);
 
-const anotherString = gameName.slice(-8, 4)
-// console.log(anotherString);
+const anotherString = gameName.slice(-8, 4) 
+//Invalid range: start index -8, end index 4; returns empty string
+console.log("2 "+ anotherString);
 
 const newStringOne = "   ishu    "
-// console.log(newStringOne);
-// console.log(newStringOne.trim());
+console.log(newStringOne);
+console.log(newStringOne.trim());
 
 const url = "https://ishu.com/ishu%20sahu"
 
-// console.log(url.replace('%20', '-'))
+console.log(url.replace('%20', '-'))
 
-// console.log(url.includes('sundar'))
+console.log(url.includes('sundar'))
 
-// console.log(gameName.split('-'));
-// console.log(gameName.lastIndexOf());
+console.log(gameName.split('-'));
+console.log(gameName.lastIndexOf());
 
 let value = 12;
 
-// console.log(typeof(value.toString()))
+console.log(typeof(value.toString()))

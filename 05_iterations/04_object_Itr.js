@@ -21,6 +21,6 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
 
-for (const key in map) { // not possible
-    // console.log(key);
+for (const key in map) { // not possible .. use can be interate using for of
+    console.log(key);
 }

@@ -19,6 +19,7 @@ for (let i = 1; i <= 10; i++) {
    }
     
 }
+
 let myArray = ["flash", "batman", "superman"]
 //console.log(myArray.length);
 for (let index = 0; index < myArray.length; index++) {
@@ -39,7 +40,7 @@ for (let index = 0; index < myArray.length; index++) {
     
 // }
 
-for (let index = 1; index <= 20; index++) {
+for (let index = 1; index <= 8; index++) {
     if (index == 5) {
         console.log(`Detected 5`);
         continue

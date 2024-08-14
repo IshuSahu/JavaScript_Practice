@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Events </title>
+    <style>
+        div {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h2 {
+            color: black;
+        }
+        #grandparent {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+        #parent {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        #child {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
+    
+    <div>
+        <h2>Welcome To GFG</h2>
+        <div id="grandparent">GrandParent
+            <div id="parent">Parent
+                <div id="child">Child</div>
+            </div>
+        </div>
+    </div>
+
     <h2>Amazing image</h2>
     <div >
         <ul id="images">
@@ -31,36 +68,63 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-//event propagation
+//event propagation: 
+/* Event Propagation determines in which order the elements receive the event. There are two ways to handle this event propagation order of HTML DOM is Event Bubbling and Event Capturing.*/
+
+
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
-    // }, false)   
+    // }, false)  
 
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()  // it will stop the propagationn
     // }, false)  
     
-    //false: is basically bubbling(from bottom to top)  , if it is true then it will image captureing
+    
+//false: is basically bubbling(from bottom to top)  , 
+ //   document.getElementById( 
+ //   "child").addEventListener("click", function () { 
+ //       alert("You clicked the Child element!"); 
+ //   }, false); 
+ //     
+ //   document.getElementById( 
+ //   "parent").addEventListener("click", function () { 
+ //       alert("You clicked the parent element!"); 
+ //   }, false); 
+//
+ //   document.getElementById( 
+ //   "grandparent").addEventListener("click", function () { 
+ //       alert("You clicked the grandparent element!"); 
+ //   }, false); 
 
 
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
-    //     e.stopPropagation()
-    //     console.log("google clicked");
-    // }, false)
-   
+//if it is true:  then it will image captureing (top down)
+    document.getElementById( 
+    "child").addEventListener("click", function () { 
+        alert("You clicked the Child element!"); 
+    }, true); 
+      
+    document.getElementById( 
+    "parent").addEventListener("click", function () { 
+        alert("You clicked the parent element!"); 
+    }, true); 
+
+    document.getElementById( 
+    "grandparent").addEventListener("click", function () { 
+        alert("You clicked the grandparent element!"); 
+    }, true); 
     
 // samll Image removing Project: 
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
-        if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
-        }
-
-    })
+ //    document.querySelector('#images').addEventListener('click', function(e){
+ //       console.log(e.target.tagName);
+ //       if (e.target.tagName === 'IMG') {
+ //           console.log(e.target.id);
+ //           let removeIt = e.target.parentNode
+ //           removeIt.remove()
+ //       }
+//
+ //   }) 
     
     //removeIt.parentNode.removeChild(removeIt)
 </script>

@@ -6,7 +6,7 @@ const values = coding.forEach( (item) => {  // does not return any values(undefi
     return item
 } )
 
-console.log(values); 
+// console.log(values);
 
 // for this we will use filter for return each value
 // const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -15,7 +15,7 @@ console.log(values);
 
 // const newNums = myNums.filter( (num) => {   // (filter (callback)
 //     return num > 4
-// } )
+// } )  
 
 /*The filter() method is an iterative method. It calls a provided callbackFn function once for each element in an array, and constructs a new array of all the values for which callbackFn returns a truthy value */
 
@@ -56,27 +56,27 @@ let userBooks = books.filter( (bk) => bk.genre === 'History')
 const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNumers.map( (num) => { return num + 10})
-
 // Chaining in Map
 const newNums = myNumers
                 .map((num) => num * 10 )
                 .map( (num) => num + 1)
-                .filter( (num) => num >= 40)
+                .filter( (num) => num >= 40) 
+                // this will store all the value with 1*10 + 1 if it is >40 then only
 
 // console.log(newNums);
-
 //*******************************Reduce **************************************8*/
 
 const myNums = [1, 2, 3]
 // (accumulator, currvalue)
-const myTotal = myNums.reduce(function (acc, currval) {
-    // console.log(`acc: ${acc} and currval: ${currval}`);
-    return acc + currval
-}, 0)
+// const myTotal = myNums.reduce(function (acc, currval) {
+//     console.log(`acc: ${acc} and currval: ${currval}`);
+//     return acc + currval
+// }, 0)
+// here 0 is initialize to accoumulator
 
-// const myTotal = myNums.reduce( (acc, curr) => acc*curr, 1)
+const myTotal = myNums.reduce( (acc, curr) => acc+curr, 1) // 0 or 1 represent the initial value of acc
 
-console.log(myTotal);
+// console.log(myTotal);
 
 
 const shoppingCart = [
@@ -97,7 +97,7 @@ const shoppingCart = [
         price: 12999
     },
 ]
- 
+
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
-// console.log(priceToPay);
+console.log(priceToPay);

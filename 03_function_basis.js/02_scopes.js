@@ -18,7 +18,7 @@ if (true) {
 }
 
 // console.log(a); // global scope
-// console.log(b);
+// console.log(b); //b is not defined
 // console.log(c);
 
 
@@ -52,11 +52,11 @@ if (true) {
 // // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-// console.log(addone(5))
+console.log(addone(5))
 
-// function addone(num){
-//     return num + 1
-// }
+function addone(num){
+    return num + 1
+}
 
 
 
