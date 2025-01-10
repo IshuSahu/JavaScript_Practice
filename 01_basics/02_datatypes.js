@@ -13,7 +13,7 @@
 let a=787;
 let b="Ishu"; //string in double quote
 c=43.5;
-console.log(b);
+console.log(c);
 
 console.log(typeof(c)); //number
 console.log(typeof null); // object

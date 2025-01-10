@@ -15,10 +15,10 @@ user.username = "sam"
 // console.log(this); // ouput = {} node refer to empty object
 
 //  this inside function 
-function chai(){
-    let username = "Ishu"
-    console.log(this.username);  // return undefined in function
-}
+// function chai(){
+//     let username = "Ishu"
+//     console.log(this.username);  // return undefined in function
+// }
 
 // chai()
 /* 
@@ -29,10 +29,15 @@ Scope of this: In non-strict mode, when you call chai(), this inside chai refers
 Lexical Scoping: In JavaScript, this is not lexically scoped (it doesn't behave like a normal variable that respects function scope). Instead, this is dynamically scoped based on how the function is called.
 */
 // const chai = function () {
-//     let username = "Ishu"
+//     this.username = "Ishu";
 //     console.log(this.username);
 // }
-
+// chai()
+const chai = function () {
+    let username = "Ishu"
+    console.log(this.username);
+}
+chai()
 
 // Arrow function
 const Hello =  () => {
@@ -47,7 +52,7 @@ const add = (a, b) => a + b;
 Arrow functions increase readability.
 */ 
 
-// chai()
+Hello()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
@@ -59,5 +64,4 @@ Arrow functions increase readability.
 
 // const addTwo = (num1, num2) => ({username: "Ishu sahu"}) // object has to be warp in parenthesis
 
-
-console.log(addTwo(3, 4))
+// console.log(addTwo(3, 4))

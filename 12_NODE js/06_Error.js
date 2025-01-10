@@ -41,7 +41,7 @@ const promise = new Promise((resolve, reject) => {
 // promise.then((val)=>{
 //     console.log(val)
 // }).catch((e)=>{
-//     console.log(e);
+//     console.log("Error found", e);
 // });
 
 // ****************Exception using Async Await
@@ -51,7 +51,7 @@ const somefunction = async () => {
     await doSomething();
   } catch (e) {
     // throw new CustomError("This is Custom error Object")
-    throw new CustomError(e.message);
+    throw new CustomError("error Message: ", e.message);
   }
 };
 //1.25

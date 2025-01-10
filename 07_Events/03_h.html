@@ -15,18 +15,18 @@
         console.log(str, Date.now());
     }
 
-    //const intervalId = setInterval(sayDate, 1000, "hi")
-    //clearInterval(intervalId) 
+    <!-- const intervalId = setInterval(sayDate, 1000, "hi") -->
+    <!-- clearInterval(intervalId)  -->
 
     const startMessage = document.querySelector('#start')
     const stopMessage = document.querySelector('#stop')
 
     let intervalId
-    startMessage.addEventListener('click', function(e){
+    startMessage.addEventListener('click', function(){
         intervalId = setInterval(sayDate, 1000, "hi") 
         console.log("Start")
     })
-    stopMessage.addEventListener('click', function(e){
+    stopMessage.addEventListener('click', function(){
         clearInterval(intervalId) 
         console.log("Stopped")
     })

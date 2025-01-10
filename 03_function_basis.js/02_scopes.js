@@ -54,13 +54,13 @@ if (true) {
 
 console.log(addone(5))
 
-function addone(num){
+function addone(num){ //return 6
     return num + 1
 }
 
 
 
 console.log(addTwo(5));
-const addTwo = function(num){ // function /Expression
+const addTwo = function(num){ // give error like fun used before initiallization
     return num + 2
 }

@@ -5,7 +5,7 @@
 const name = "ishu"
 const repoCount = 50
 
-// console.log(name + repoCount + " Value");
+console.log(name + repoCount + " Value");
 
 // console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);  //  Mostly in use now
 
@@ -37,7 +37,7 @@ console.log(url.replace('%20', '-'))
 console.log(url.includes('sundar'))
 
 console.log(gameName.split('-'));
-console.log(gameName.lastIndexOf());
+console.log(gameName.lastIndexOf('i'));
 
 let value = 12;
 

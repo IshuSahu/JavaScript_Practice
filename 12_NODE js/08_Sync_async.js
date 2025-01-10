@@ -12,7 +12,7 @@
 //     console.log("Progress End Here");
 // }
 
-// // sleep(1000)
+// sleep(100)
 // console.log("Execution Ends Here!");
 
 // // Async code
@@ -43,6 +43,7 @@
 //   cb();
 // }
 
+// syncCode( ()=> console.log("Ishu"))
 // function asyncCode(cb) {
 //   console.log("task running 2");
 //   setTimeout(() => {
@@ -51,12 +52,10 @@
 // }
 
 // asyncCode( ()=> console.log(name))
-// syncCode( ()=> console.log("Ishu"))
-
 // const name = "Ishu"
 // console.log("Task Ends Here");
 
-//*********************callbacck hell */
+//*********************callback hell */
 
 // Let Example:
 // function AsyncTask(cb){
@@ -91,31 +90,37 @@
 
 // *************************PRomises********************
 
-const promises = new Promise((resolve, reject) => {
-  console.log("Async task Execution");
-  if (true) {
-    const person = { name: "Ishu" };
-    resolve(person);
-  } else {
-    reject();
-  }
-});
+// const promises = new Promise((resolve, reject) => {
+//   console.log("Async task Execution");
+//   if (true) {
+//     const person = { name: "Ishu" };
+//     resolve(person);
+//   } else {
+//     reject();
+//   }
+// });
 
 // promises.then(
-//   () => {
-//     console.log("Passed!");
+//   (name) => {
+//     console.log("Passed!", name);
 //   },
 //   () => {
 //     console.log("Failed!");
 //   }
 // );
 
-// promises.then(
-//     (person)=>{console.log(person);},
-//     ()=>{console.log("Reject");}
-//     ).catch((e)=>{
-//         console.log(e); // in this case u can remove error from promise:
-//     })
+// promises
+//   .then(
+//     (person) => {
+//       console.log(person);
+//     },
+//     () => {
+//       console.log("Reject");
+//     }
+//   )
+//   .catch((e) => {
+//     console.log(e); // in this case u can remove error from promise:
+//   });
 
 // // make API call
 const makeApiCall = (time) => {

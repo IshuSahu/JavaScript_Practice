@@ -7,21 +7,19 @@
 //         break;
 // }
 
-const month = "march"
+const month = "feb"
 
 switch (month) {
     case "jan":
         console.log("January");
-        // break;
-    case "feb":
-        console.log("feb");
-        // break;
+        break;
+    case "feb": // here fofr both u were log samevalue
     case "march":
-        console.log("march");
-        // break;
+        console.log("my day");
+        break;
     case "april":
         console.log("april");
-        // break;
+        break;
 
     default:
         console.log("default case match");

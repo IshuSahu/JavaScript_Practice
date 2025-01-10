@@ -25,8 +25,10 @@ if (Object.keys(emptyObj).length === 0) {
 // Nullish Coalescing Operator (??): null undefined
 
 let val1;
-// val1 = 5 ?? 10
-// val1 = null ?? 10 //(10) if null then check safty mosly use in working with databases
+val1 = 5 ?? 10
+console.log(val1);
+val1 = null ?? 10 //(10) if null then check safty mosly use in working with databases
+console.log(val1);
 val1 = undefined ?? 15
 
 console.log(val1);

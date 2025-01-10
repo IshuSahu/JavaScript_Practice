@@ -1,13 +1,15 @@
 const express = require("express");
 const router = express.Router(); 
 
-const {getContact,createContact,UpdateContact,deleteContact} = require("../controller/contact-controller")
+const {getContact,createContact,UpdateContact,deleteContact} = require("../controller/contact-controller");
+const validToken = require("../middleware/tokenHandler");
 
 // router.route("/").get(getContact);
 // router.route("/").post(createContact);
 // router.route("/:id").put(UpdateContact);
 // router.route("/:id").delete(deleteContact);
 
+router.use(validToken) // this is the way u can validate if you have all the protected routes
 router.route("/").get(getContact).post(createContact);
 router.route("/:id").put(UpdateContact).delete(deleteContact);
 

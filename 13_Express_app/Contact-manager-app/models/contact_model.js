@@ -1,6 +1,12 @@
 const mongoose = require("mongoose")
 
 const contactSchema = mongoose.Schema({
+    user_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        require: true,
+        ref: 'user'
+
+    },
     name:{
         type: String,
         require:[true, "please add the contact name"]
@@ -17,4 +23,4 @@ const contactSchema = mongoose.Schema({
     timestamps: true,
 })
 
-module.exports = mongoose.model("Contact", contactSchema)
+module.exports = mongoose.model("contacts", contactSchema)

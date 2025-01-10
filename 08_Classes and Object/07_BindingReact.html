@@ -9,15 +9,17 @@
     <button>Button Clicked</button>
 </body>
 <script>
+    <!-- demonstrates a simple implementation of a class React in JavaScrip -->
     class React {
         constructor(){
             this.library = "React"
             this.server = "https://localhost:300"
 
-            //requirement 
+            //Attaching an event listener to the button
             document
                 .querySelector('button')
                 .addEventListener('click', this.handleClick.bind(this))
+            // is used to bind the this context of the handleClick method to the class instance.
 
         }
         handleClick(){
@@ -27,5 +29,9 @@
     }
 
     const app = new React()
+
+    /*
+    Clicking the button dynamically calls the handleClick method, demonstrating interactivity in web applications.
+    */
 </script>
 </html>

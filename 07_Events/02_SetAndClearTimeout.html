@@ -11,18 +11,15 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    const sayName = function(){
-        console.log("Ishu");
+    changeName = () => {
+        let tagName = document.querySelector('h1')
+        tagName.innerHTML = 'Revision Learning';
     }
-    const changeText = function(){
-        document.querySelector('h1').innerHTML = "best JS series"
-    }
+    let interval = setInterval(changeName, 5000);
 
-    const changeMe = setTimeout(changeText, 2000) 
-
-    document.querySelector('#stop').addEventListener('click', function(){
-        clearTimeout(changeMe)
-        console.log("STOPPED")
+    document.getElementById('stop').addEventListener('click', ()=>{
+        clearInterval(interval);
+        console.log('Interval Has been Stopped');
     })
 </script>
 </html>

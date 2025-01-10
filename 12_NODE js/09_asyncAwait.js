@@ -1,3 +1,5 @@
+// User validation using promise
+
 const userLogin=()=>{
     console.log("Enter the UserName and Password: ");
     // let username = prompt("Enter username: ")
