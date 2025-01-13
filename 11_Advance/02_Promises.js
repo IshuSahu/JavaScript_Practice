@@ -30,7 +30,6 @@ What are JavaScript promises?
 //     console.log("Async 2 resolved");
 // })
 
-
 // //3
 // const promiseThree = new Promise(function(resolve, reject){
 //     setTimeout(function(){
@@ -42,7 +41,6 @@ What are JavaScript promises?
 // promiseThree.then(function(user){
 //     console.log(user);
 // })
-
 
 // //4
 // const promiseFour = new Promise(function(resolve, reject){
@@ -66,19 +64,17 @@ What are JavaScript promises?
 //     console.log(error);
 // }).finally(() => console.log("The promise is either resolved or rejected"))
 
-
 //5
-const promiseFive = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error = false
-        if (!error) {
-            resolve({username: "javascript", password: "123"})
-        } else {
-            reject('ERROR: JS went wrong')
-        }
-    }, 1000)
+const promiseFive = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = false;
+    if (!error) {
+      resolve({ username: "javascript", password: "123" });
+    } else {
+      reject("ERROR: JS went wrong");
+    }
+  }, 1000);
 });
-
 
 /* The async/await syntax is a modern approach to handle asynchronous operations. It
 allows writing asynchronous code in a more synchronous-like manner, making it
@@ -95,27 +91,26 @@ easier to read and maintain  */
 
 // consumePromiseFive()
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+async function getAllUsers() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    console.log("getting data");
 
-//         const data = await response.json()
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error);
-//     }
-// }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("E: ", error);
+  }
+}
 
-// getAllUsers()
-
-
+getAllUsers();
+console.log("Once get data will let you know");
 
 // fetch('https://api.github.com/users/IshuSahu')
 // .then((response) => {
-//     return response.json() 
+//     return response.json()
 // })
 // .then((data) => {
 //     console.log(data);
 // })
 // .catch((error) => console.log(error))
-
