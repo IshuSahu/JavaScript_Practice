@@ -1,19 +1,50 @@
 // Example of Sync and Async Program
 
 // //Sync
-// console.log("Excution started");
+// let sum = (num) => {
+//   let ans = 0;
+//   for (let i = 0; i < num; i++) {
+//     ans += num;
+//   }
+//   return ans;
+// };
+// console.log(sum(200));
+// console.log(sum(100));
+// console.log(sum(10));
 
-// function sleep(milisecond){
-//     let startTime = new Date().getTime()
-//     console.log("Running......");
-//     while(new Date().getTime() < startTime + milisecond){
-//         console.log("In Progress")
+//ASync
+let sum = (num) => {
+  let ans = 0;
+  for (let i = 0; i < num; i++) {
+    ans += num;
+  }
+  return ans;
+};
+
+setTimeout(() => console.log(sum(200)), 1000);
+setTimeout(() => console.log(sum(100)), 1000);
+console.log(sum(10));
+
+// let sum = (num, callback) => {
+//   setTimeout(() => {
+//     let ans = 0;
+//     for (let i = 0; i < num; i++) {
+//       ans += num;
 //     }
-//     console.log("Progress End Here");
-// }
+//     callback(ans);
+//   }, 1000);
+// };
 
-// sleep(100)
-// console.log("Execution Ends Here!");
+// // Usage
+// sum(200, (result) => {
+//   console.log(result); // Logs the result for 200
+// });
+// sum(100, (result) => {
+//   console.log(result); // Logs the result for 100
+// });
+// sum(10, (result) => {
+//   console.log(result); // Logs the result for 10
+// });
 
 // // Async code
 // console.log("Excution started");
@@ -89,6 +120,22 @@
 // to over come this we use Promises or Async await
 
 // *************************PRomises********************
+// function setTimeoutPromisified(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+// setTimeoutPromisified(1000)
+//   .then(function () {
+//     console.log("hi");
+//     return setTimeoutPromisified(3000);
+//   })
+//   .then(function () {
+//     console.log("hello");
+//     return setTimeoutPromisified(5000);
+//   })
+//   .then(function () {
+//     console.log("hello there");
+//   });
 
 // const promises = new Promise((resolve, reject) => {
 //   console.log("Async task Execution");
@@ -110,6 +157,17 @@
 // );
 
 // promises
+//   .then(
+//     (person) => {
+//       console.log(person);
+//     },
+//     () => {
+//       console.log("Reject");
+//     }
+//   )
+//   .catch((e) => {
+//     console.log(e); // in this case u can remove error from promise:
+//   });
 //   .then(
 //     (person) => {
 //       console.log(person);
