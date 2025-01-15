@@ -57,21 +57,20 @@ async function PerformTask() {
 
 // Another Eg cb, promisem, Async await
 function setTimeoutPromisified(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-  
-// **************************************callback  
-//   setTimeoutPromisified(1000).then(function () {
-//     console.log("hi");
-//     setTimeoutPromisified(3000).then(function () {
-//       console.log("hello");
-//       setTimeoutPromisified(5000).then(function () {
-//         console.log("hello there");
-//       });
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// **************************************callback
+// setTimeoutPromisified(500).then(function () {
+//   console.log("hi");
+//   setTimeoutPromisified(2000).then(function () {
+//     console.log("hello");
+//     setTimeoutPromisified(100).then(function () {
+//       console.log("hello there");
 //     });
 //   });
+// });
   
-
 // ******************************Promises
 // setTimeoutPromisified(1000)
 //   .then(function () {
@@ -86,15 +85,14 @@ function setTimeoutPromisified(ms) {
 //     console.log("hello there");
 //   });
 
-
 // ********************************Async Await
-async function solve() {
-  await setTimeoutPromisified(1000);
-  console.log("hii");
-  await setTimeoutPromisified(3000);
-  console.log("hello");
-  await setTimeoutPromisified(5000);
-  console.log("hii There");
-}
+// async function solve() {
+//   await setTimeoutPromisified(1000);
+//   console.log("hii");
+//   await setTimeoutPromisified(3000);
+//   console.log("hello");
+//   await setTimeoutPromisified(5000);
+//   console.log("hii There");
+// }
 
-solve();
+// solve();

@@ -1,3 +1,5 @@
+/*Methods that belong to the class itself, not to instances of the class. You call them directly on the class. */
+
 class User {
     constructor(username){
         this.username = username

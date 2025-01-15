@@ -5,8 +5,9 @@ function SetUsername(username){
 }
 
 function createUser(username, email, password){
-    SetUsername.call(this, username)  // here this is improtant as it get all the current context of setUserName(which get vanish after use)
-   
+    SetUsername.call(this, username)  // here "this" is improtant as it get all the current context of setUserName(which get vanish after use)
+    console.log(username);
+    
     this.email = email
     this.password = password
 }

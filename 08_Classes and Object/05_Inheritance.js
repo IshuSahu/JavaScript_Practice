@@ -1,3 +1,7 @@
+/*
+This mechanism enables code reuse, making it easier to create new classes that are based on existing ones
+*/
+
 class User {
     constructor(username){
         this.username = username

@@ -1,22 +1,21 @@
 // ES6
-
+//In JavaScript, classes are a way to define blueprints for creating objects
 class User {
-    constructor(username, email, password){
-        this.username = username;
-        this.email = email;
-        this.password = password
-    }
+  constructor(username, email, password) {
+    this.username = username;
+    this.email = email;
+    this.password = password;
+  }
 
-    encryptPassword(){
-        return `${this.password}abc`
-    }
-    changeUsername(){
-        return `${this.username.toUpperCase()}`
-    }
-
+  encryptPassword() {
+    return `${this.password}abc`;
+  }
+  changeUsername() {
+    return `${this.username.toUpperCase()}`;
+  }
 }
 
-const stud = new User("Ishu", "sahuij@12.com", "123")
+const stud = new User("Ishu", "sahuij@12.com", "123");
 
 console.log(stud.encryptPassword());
 console.log(stud.changeUsername());
@@ -36,8 +35,9 @@ console.log(stud.changeUsername());
 //     return `${this.username.toUpperCase()}`
 // }
 
-
 // const stud = new User("Janakram sahu", "janakrsa@gmail.com", "123")
 
 // console.log(stud.encryptPassword());
 // console.log(stud.changeUsername());
+
+
