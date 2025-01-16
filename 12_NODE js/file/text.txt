@@ -1,1 +1,3 @@
-Hii, My name is Ishu sahu and I'm learning Node.js/n this is file writing approch using Promises
+Hii, 
+My name is Ishu sahu and I'm learning Node.js
+this is file writing approch using Promises
