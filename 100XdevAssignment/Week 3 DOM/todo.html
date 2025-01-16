@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TODO APP</h1>
+    <div class="addtotodo">
+        <input type="text" class="getdata" placeholder="Add task..">
+        <button onclick="addTodo()">Add</button>
+    </div>
+    <div class="todos">
+        <div class="todoItems" id="1">
+            <h4>Dom complete</h4>
+            <button onclick="removeTodo(1)">remove</button>
+        </div>
+    </div>
+</body>
+<script>
+    counter = 1;
+    function addTodo() {
+        content = document.querySelector('.getdata').value.trim();
+        if (content === "") {
+            alert("please enter task in input box")
+            return
+        }
+        counter++;
+        div = document.createElement('div');
+        div.className = `${'todoItems'}`;
+        div.id = counter
+        div.innerHTML = `<h4>${content}</h4>
+        <button onclick="removeTodo(${counter})">remove</button>`
+        todos = document.querySelector('.todos').appendChild(div);
+    }
+
+    function removeTodo(id) {
+        let todoItem = document.getElementById(id);
+        todoItem.remove();
+    }
+</script>
+
+</html>
