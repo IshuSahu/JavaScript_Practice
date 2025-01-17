@@ -9,4 +9,4 @@ process.argv.forEach((val,index)=>{
 // //  input:  node .\04_Augument.js Name=Ishu
 const minimist = require("minimist")
 const argNew = minimist(process.argv.slice(2));
-console.log(argNew.Name);
+console.log(argNew);

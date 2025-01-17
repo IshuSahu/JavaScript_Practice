@@ -60,6 +60,7 @@ const fspromise = require("fs/promises");
 const writeFile = path.join(__dirname, "file", "text.txt");
 const content = "Hii, My name is Ishu sahu and I'm learning Node.js";
 
+// Async way to write in a file
 // file.writeFile(writeFile, content, (err) => {
 //     if (err) {
 //         console.error(err);

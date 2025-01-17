@@ -86,13 +86,13 @@ function setTimeoutPromisified(ms) {
 //   });
 
 // ********************************Async Await
-// async function solve() {
-//   await setTimeoutPromisified(1000);
-//   console.log("hii");
-//   await setTimeoutPromisified(3000);
-//   console.log("hello");
-//   await setTimeoutPromisified(5000);
-//   console.log("hii There");
-// }
+async function solve() {
+  await setTimeoutPromisified(1000);
+  console.log("hii");
+  await setTimeoutPromisified(3000);
+  console.log("hello");
+  await setTimeoutPromisified(5000);
+  console.log("hii There");
+}
 
-// solve();
+solve();

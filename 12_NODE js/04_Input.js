@@ -12,9 +12,10 @@ const readline = require("readline")
 //     rl.close()
 // })
 
-// // **********************Another packacge for to get rid of callback function  npm i prompt-sync
+// // **************Another packacge for to get rid of callback function  npm i prompt-sync
 
-const pormptsync = require("prompt-sync")();// its an funtion
+const pormptsync = require("prompt-sync");// its an funtion
+const getData = pormptsync();
 
-const name = pormptsync("What is your name: ")
+const name = getData("What is your name: ")
 console.log(name);

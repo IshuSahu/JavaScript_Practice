@@ -14,7 +14,7 @@ class CustomError extends Error {
 }
 
 // module.exports ={CustomError} // to Export
-// const {custome error} = require("./fileName")
+// const {customError} = require("./fileName")
 
 // throw new CustomError("This is Custom error Object")
 
