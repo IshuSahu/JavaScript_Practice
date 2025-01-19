@@ -1,6 +1,0 @@
-Week 3: 
-DOM Basic: 
-https://www.notion.so/DOM-Manipulation-17cfc40b5b0a800093f3dafe4ace0521
-
-DOM Adv:
-https://projects.100xdevs.com/tracks/dom-2/DOM-Part-2--2

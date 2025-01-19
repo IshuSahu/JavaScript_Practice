@@ -1,2 +1,0 @@
-Wee1: Html, Css, js basic
-https://projects.100xdevs.com/tracks/javascript-1/Javascript-101-2

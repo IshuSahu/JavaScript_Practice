@@ -1,5 +1,0 @@
-week2: 
-Sync&Async
-https://projects.100xdevs.com/tracks/async-js-1/Asynchronous-Javascript--Callbacks-and-more-3
-Promise, Async Await: 
-https://projects.100xdevs.com/tracks/promises-async-await/Promises-and-async--await-1
