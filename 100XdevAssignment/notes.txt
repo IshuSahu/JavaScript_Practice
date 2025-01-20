@@ -15,8 +15,11 @@ Week 3:
     DOM Adv:
     https://projects.100xdevs.com/tracks/dom-2/DOM-Part-2--2
 
-Week 5
+Week 5: Headers and Servers 
     https://www.notion.so/HTTP-Deep-dive-180fc40b5b0a80f592d7ec821746b7d6
 
-Week 6: 
+Week 6: Authentincation
     https://www.notion.so/Authentincation-180fc40b5b0a80788551eaeb9d9deb0f
+
+Week 7: Data bases and mongoDB:
+    https://www.notion.so/Databases-and-MongoDb-181fc40b5b0a802fb62cc1d83e67bb0e
